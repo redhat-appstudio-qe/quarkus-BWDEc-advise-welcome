@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-nt8f
+  namespace: e2e-demos-hgdg-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:1346a1817d144c929b8d33e847bc34084910e90327dcdb72b3ee8fc12f8b84ca
+        name: my-java-quarkus
+        resources: {}
+status: {}
